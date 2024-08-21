@@ -122,42 +122,15 @@
         padding: 17px;
       }
 
-      header img {
-        opacity: 0.7;
-        border-radius: 80px;
-        justify-content: space-between;
-      }
-      header img:hover {
-        border: whitesmoke solid;
-
-        opacity: 0.7;
-        box-shadow: 0 0 25px #c19a8b;
-      }
-       header ul {
+     header {
+        position: fixed;
+        width: 100%;
+        top: 0;
         display: flex;
-        margin-left: auto;}
-      header ul li {
-        list-style: none;
-        display: inline-block;
-        margin-right: 40px;
         align-items: center;
-      
-        justify-content: space-between;
-      }
-
-      header ul li a {
-        text-decoration: none;
-        color: #fff;
-        font-size: 17px;
-      }
-      header ul li a:hover {
-        border: whitesmoke solid;
-        opacity: 0.7;
-        border-radius: 25px;
-        padding: 10px;
-        color: black;
-        background-color: #dab6a9;
-        box-shadow: 0 0 25px #c19a8b;
+        padding: 10px 20px; /* Adjusted padding for more space */
+        background-color: rgba(0, 0, 0, 0.5); /* Add background color for visibility */
+        z-index: 1000;
       }
 
       header .logo img {
@@ -168,6 +141,36 @@
         transition: 0.3s;
         padding: 10px;
       }
+
+      header ul {
+        display: flex;
+        margin-left: auto; /* Push the menu items to the right */
+        padding: 0; /* Remove padding for better alignment */
+        list-style: none; /* Remove default list styling */
+      }
+
+      header ul li {
+        margin: 0 20px; /* Adjusted margin for spacing */
+        padding: 10px 0; /* Adjusted padding for more space */
+      }
+
+      header ul li a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 17px;
+        display: inline-block; /* Ensure that the links are aligned properly */
+      }
+
+      header ul li a:hover {
+        border: whitesmoke solid;
+        opacity: 0.7;
+        border-radius: 25px;
+        padding: 10px;
+        color: black;
+        background-color: #dab6a9;
+        box-shadow: 0 0 25px #c19a8b;
+      }
+
       .scroll-icon-container {
         position: fixed;
         bottom: 20px; /* Adjust as needed */
